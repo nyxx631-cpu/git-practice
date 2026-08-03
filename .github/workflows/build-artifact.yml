@@ -1,0 +1,22 @@
+name: Upload Artifact
+
+on:
+  push:
+
+jobs:
+
+  upload:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - run: echo "Build Output" > output.txt
+
+      - uses: actions/upload-artifact@v4
+
+        with:
+
+          name: BuildFile
+
+          path: output.txt
