@@ -1,0 +1,24 @@
+name: Linux Commands
+
+on:
+  push:
+
+jobs:
+
+  linux:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - run: pwd
+
+      - run: ls
+
+      - run: date
+
+      - run: whoami
+
+      - run: uname -a
