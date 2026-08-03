@@ -1,0 +1,30 @@
+name: Multi Job Workflow
+
+on:
+  push:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - run: echo "Building Project"
+
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - run: echo "Running Tests"
+
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - run: echo "Deploying Application"
